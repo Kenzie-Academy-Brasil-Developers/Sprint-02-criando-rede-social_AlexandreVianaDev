@@ -1,0 +1,351 @@
+header {
+    width: 100%;
+    height: 76px;
+
+    background-color: var(--color-grey-1);
+
+    position: fixed;
+    z-index: 1;
+}
+
+header > div {
+    height: 100%;
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul > li {
+    color: var(--color-white);
+    font-size: var(--font-text-2);
+}
+
+nav > ul > li:hover {
+    cursor: pointer;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.main__header {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post__create {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+    max-width: 700px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile__image {
+    width: 52px;
+}
+
+.profile__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: fit-content;
+}
+
+.profile__info--name {
+    color: var(--color-grey-1);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-title-2);
+    line-height: var(--line-height-title-2);
+}
+
+.profile__info--job {
+    color: var(--color-grey-2);
+    font-size: var(--font-text-2);
+}
+
+.post__create > form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post__create > form > input, .post__create > form > textarea {
+    width: 100%;
+
+    border: 2px solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+
+    padding-left: 20px;
+
+    color: var(--color-grey-2);
+    font-size: var(--font-text-1);
+    font-weight: var(--font-weight-4);
+}
+
+.post__create > form > input::placeholder, .post__create > form > textarea::placeholder {
+    color: var(--color-grey-3);
+}
+
+.post__create > form > input:focus, .post__create > form > textarea:focus {
+    border-color: var(--color-brand-1);
+}
+
+.post__create > form > input {
+    height: 3.25rem;
+}
+
+.post__create > form > textarea {
+    height: 8.125rem;
+
+    line-height: var(--line-height-text-1);
+
+    padding-top: 16px;
+}
+
+.post__create > form > button {
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-3);
+
+    background-color: var(--color-grey-4);
+
+    border-color: 2px solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+
+    width: 69px;
+    height: 38px;
+
+    align-self: flex-end;
+}
+
+#post__button--active {
+    color: var(--color-white);
+
+    background-color: var(--color-brand-1);
+
+    border-color: 2px solid var(--color-brand-1);
+}
+
+#post__button--active:hover {
+    background-color: var(--color-brand-2);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+aside > h3 {
+    color: var(--color-grey-1);
+    font-size: var(--font-title-2);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-title-2);
+}
+
+.profile__list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 5rem;
+}
+
+.profile__follow {
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-2);
+
+    color: var(--color-grey-1);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-2);
+
+    border: 1px solid var(--color-grey-1);
+    border-radius: 2px;
+
+    padding: 0.188rem 0.5rem;
+}
+
+.profile__follow:hover {
+    color: var(--color-brand-1);
+
+    border-color: var(--color-brand-1);
+
+    cursor: pointer;
+}
+
+.profile__follow:focus, .profile__follow:active {
+    color: var(--color-white);
+
+    background-color: var(--color-brand-1);
+
+    border: 1px solid var(--color-brand-1);
+    border-radius: 2px;
+}
+
+.posts__section {
+    width: 90%;
+    margin-top: 2rem;
+}
+
+.posts__section > h2 {
+    padding: 1rem 0;
+}
+
+h2 {
+    color: var(--color-grey-1);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-title-1);
+    line-height: var(--line-height-title-1);
+}
+
+.posts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.post > p {
+    color: var(--color-grey-2);
+    font-weight: var(--font-weight-4);
+    line-height: var(--line-height-text-1);
+}
+
+.post__options {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.post > div > button {
+    color: var(--color-white);
+    font-size: var(--font-text-2);
+    font-weight: var(--font-weight-2);
+
+    background-color: var(--color-grey-1);
+
+    border: 2px solid var(--color-grey-1);
+    border-radius: var(--radius-1);
+
+    padding: 10px 12px;
+}
+
+.post > div > button:hover {
+    background-color: var(--color-grey-0);
+
+    border-color: var(--color-grey-0);
+}
+
+i {
+    color: var(--color--grey-opacity-1);
+}
+
+.fa--activated {
+    color: var(--color-feedback-like);
+}
+
+dialog {
+    /* border: none; */
+    border-radius: var(--radius-2);
+
+    width: 800px;
+    max-width: 80%;
+}
+
+.dialog__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    position: relative;
+}
+
+.btn__close {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-grey-3);
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-title-1);
+}
+
+@media screen and (min-width: 769px) {
+    /* main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } */
+    .main__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .post__create {
+        width: 600px;
+        max-width: 50%;
+    }
+    .post__create > form > input, .post__create > form > textarea {
+        max-width: 600px;
+    }
+    aside {
+        gap: 2rem;
+
+        position: sticky;
+        position: -webkit-sticky;
+        top: 100px;
+        z-index: 0;
+
+        overflow-x: hidden;
+
+        min-width: fit-content;
+
+        max-width: 30%;
+    }
+    .profile__list {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .profile__list > .profile {
+        justify-content: space-between;
+    }
+    .posts__section {
+        justify-self: flex-end;
+        align-self: flex-end;
+
+        width: 600px;
+        max-width: 55%;
+
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .post__create, .posts__section {
+        width: 700px;
+        max-width: 60%;
+    }
+    .post__create > form > input, .post__create > form > textarea {
+        max-width: 700px;
+    }
+}
