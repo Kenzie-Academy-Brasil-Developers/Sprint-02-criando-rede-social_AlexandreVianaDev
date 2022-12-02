@@ -23,7 +23,7 @@
   <script src="./src/scripts/sugestUsers.js" defer></script>
   <!-- JS Page -->
   <script src="./src/scripts/index.js" defer></script>
-  <title>Title - QuickStart</title>
+  <title>TechPosters</title>
   <meta name="description" content="Home Website" />
 </head>
 
@@ -51,124 +51,27 @@
                 </div>
             </div>
             <form action="#">
-                <input type="text" name="" id="" placeholder="Digitar título do post">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
-                <button type="button">Postar</button>
+                <input type="text" name="" id="post__title--create" placeholder="Digitar título do post">
+                <textarea name="" id="post__text--create" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+                <button type="button" id="button_post" class="button__post">Postar</button>
             </form>
         </section>
 
         <aside>
             <h3>Sugestões para você seguir</h3>
-            <div class="profile__list">
-                <div class="profile">
-                    <img src="./src/assets/img/user2.svg" alt="Imagem do Usuário" class="profile__image">
-                    <div class="profile__info">
-                        <span class="profile__info--name">Carlos Lima</span>
-                        <span class="profile__info--job">UX e UI Designer</span>
-                    </div>
-                    <span class="profile__follow  following">Seguindo</span>
-                </div>
-                <div class="profile">
-                    <img src="./src/assets/img/user3.svg" alt="Imagem do Usuário" class="profile__image">
-                    <div class="profile__info">
-                        <span class="profile__info--name">Larissa Camargo</span>
-                        <span class="profile__info--job">UI Developer</span>
-                    </div>
-                    <span class="profile__follow">Seguir</span>
-                </div>
-                <div class="profile">
-                    <img src="./src/assets/img/user4.svg" alt="Imagem do Usuário" class="profile__image">
-                    <div class="profile__info">
-                        <span class="profile__info--name">Filipe Gutierry</span>
-                        <span class="profile__info--job">Full Stack Developer</span>
-                    </div>
-                    <span class="profile__follow">Seguir</span>
-                </div>
-            </div>
+            <ul class="profile__list">
+            </ul>
         </aside>
 
         <section class="posts__section">
             <h2>Posts</h2>
-            <ul class="posts__list">
-                <li class="post">
-                    <div class="profile">
-                        <img src="./src/assets/img/user1.svg" alt="Imagem do Usuário" class="profile__image">
-                        <div class="profile__info">
-                            <span class="profile__info--name">Samuel Persuhn</span>
-                            <span class="profile__info--job">Front end Engineer</span>
-                        </div>
-                    </div>
-                    <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
-                    <p>A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto. </p>
-                    <div class="post__options">
-                        <button type="button" data-control-modal="modal-post">Abrir post</button>
-                        <div>
-                            <i class="fa-solid fa-heart fa--activated"></i>
-                            <span>25</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="post">
-                    <div class="profile">
-                        <img src="./src/assets/img/user1.svg" alt="Imagem do Usuário" class="profile__image">
-                        <div class="profile__info">
-                            <span class="profile__info--name">Samuel Persuhn</span>
-                            <span class="profile__info--job">Front end Engineer</span>
-                        </div>
-                    </div>
-                    <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
-                    <p>A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto. </p>
-                    <div class="post__options">
-                        <button type="button" data-control-modal="modal-post">Abrir post</button>
-                        <div>
-                            <i class="fa-solid fa-heart fa--activated"></i>
-                            <span>25</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="post">
-                    <div class="profile">
-                        <img src="./src/assets/img/user1.svg" alt="Imagem do Usuário" class="profile__image">
-                        <div class="profile__info">
-                            <span class="profile__info--name">Samuel Persuhn</span>
-                            <span class="profile__info--job">Front end Engineer</span>
-                        </div>
-                    </div>
-                    <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
-                    <p>A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto. </p>
-                    <div class="post__options">
-                        <button type="button" data-control-modal="modal-post">Abrir post</button>
-                        <div>
-                            <i class="fa-solid fa-heart fa--activated"></i>
-                            <span>25</span>
-                        </div>
-                    </div>
-                </li>
+            <ul class="posts__list" id="posts_list">
             </ul>
         </section>
     </div>
   </main>
 
-  <dialog open>
-    <div class="dialog__container">
-        <div class="profile">
-            <img src="./src/assets/img/user1.svg" alt="Imagem do Usuário" class="profile__image">
-            <div class="profile__info">
-                <span class="profile__info--name">Samuel Persuhn</span>
-                <span class="profile__info--job">Front end Engineer</span>
-            </div>
-        </div>
-        <span class="btn__close">X</span>
-        <div class="post">
-            <h2>Title of the post that the user clicked to open this modal</h2>
-            <p>description of the post that the user clicked to open this modal, here will be the longer text</p>
-        </div>
-    </div>
-  </dialog>
 
-
-
-  <footer></footer>
 
 </body>
 

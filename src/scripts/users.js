@@ -17,6 +17,7 @@ const users = [
     user: "Carlos Lima",
     stack: "UX e UI Designer",
     img: "./src/assets/img/user3.svg",
+    following: true,
   },
   {
     id: 4,
@@ -33,11 +34,15 @@ const users = [
   {
     id: 6,
     user: "Filipe Gutierry",
+    stack: "Front end Engineer",
     img: "./src/assets/img/user7.svg",
+    following: false,
   },
   {
     id: 7,
     user: "Samuel Persuhn",
+    stack: "Front end Engineer",
     img: "./src/assets/img/user6.svg",
+    following: false,
   },
 ];
